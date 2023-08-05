@@ -53,6 +53,20 @@ img {
 }
 
 /* Classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
     width: 1158px;
     padding-right: 15px;
@@ -75,13 +89,14 @@ img {
 }
 
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
 
     border-bottom: 1px solid var(--secondary-white-color);
 }
 
 .logo {
+    margin-right: 76px;
+
     font-family: var(--logo-font-family);
     font-size: 18px;
     font-weight: 800;
@@ -110,7 +125,18 @@ img {
     color: var(--primary-blue-color);
 }
 
-.title-card {
+.studio-title-card {
+    margin-bottom: 8px;
+
+    text-align: center;
+    font-size: var(--title-card-font-size);
+    font-weight: var(--medium-font-weight);
+    line-height: 1.2;
+    letter-spacing: 0.025em;
+    color: var(--primary-blue-color);
+}
+
+.portfolio-title-card {
     margin-bottom: 8px;
 
     font-size: var(--title-card-font-size);
@@ -120,9 +146,14 @@ img {
     color: var(--primary-blue-color);
 }
 
-.card-description {
-    margin-bottom: 32px;
+.studio-card-description {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-description-color);
+}
 
+.portfolio-card-description {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-description-color);
@@ -146,6 +177,8 @@ img {
 
 .btn:hover,
 .btn:focus {
+    border: 1px solid transparent;
+
     background-color: var(--pressed-state-color);
     color: var(--white-background-color);
 }
@@ -162,8 +195,7 @@ img {
 
 .menu {
     display: flex;
-    column-gap: 40px;
-    margin-left: 76px;
+    gap: 40px;
 }
 
 .menu-link {
@@ -187,7 +219,7 @@ img {
 
 .contacts-list {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .contacts-item {
@@ -201,7 +233,7 @@ img {
     color: var(--pressed-state-color);
 }
 
-/* FOOTER */
+/* ======== FOOTER ======== */
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -209,10 +241,14 @@ img {
     background-color: var(--primary-blue-color);
 }
 
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .footer-description {
     max-width: 264px;
-    margin-top: 16px;
-
+    
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-light-color);
@@ -242,7 +278,7 @@ img {
 
 .studio-hero-btn {
     display: block;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     margin-right: auto;
     margin-left: auto;
@@ -268,12 +304,12 @@ img {
 /* STUDIO ABOUT */
 .studio-about {
     padding-top: 120px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
 }
 
 .studio-about-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .studio-about-item {
@@ -288,7 +324,7 @@ img {
 
 .studio-doing-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .studio-doing-item {
@@ -302,18 +338,19 @@ img {
 
 .studio-team-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .studio-team-card {
     flex-basis: calc((100% - 3 * 24px) / 4);
 
-    text-align: center;
+    border-radius: 0 0 4px 4px;
+
     background-color: var(--white-background-color);
 }
 
-.team-card-img {
-    margin-bottom: 32px;
+.team-card-text {
+    padding: 32px 0;
 }
 
 /* ======== PORTFOLIO ======== */
@@ -324,7 +361,7 @@ img {
 
 .portfolio-filter {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
     justify-content: center;
     margin-bottom: 72px;
 }
@@ -337,12 +374,10 @@ img {
 
 .portfolio-card {
     flex-basis: calc((100% - 2 * 24px) / 3);
-
-    border: 1px solid var(--secondary-white-color);
 }
 
 .portfolio-card-text {
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 32px 16px;
+
+    border: 1px solid var(--secondary-white-color);
 }
