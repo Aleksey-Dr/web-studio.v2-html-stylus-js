@@ -89,8 +89,6 @@ img {
 }
 
 .page-header {
-    padding: 24px 0;
-
     border-bottom: 1px solid var(--secondary-white-color);
 }
 
@@ -199,6 +197,7 @@ img {
 }
 
 .menu-link {
+    display: block;
     padding: 24px 0;
 
     font-weight: var(--medium-font-weight);
