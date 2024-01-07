@@ -1,10 +1,7 @@
-# goit-markup-hw-03
+# [WEB STUDIO](https://aleksey-dr.github.io/goit-markup-hw-03/)
 
-31/07/2023
-1. Added margin (top, bottom) for <h1> - <h6>, <p>.
+#### [Aleksey-Dr](https://github.com/Aleksey-Dr)
 
-01/07/2023
-1. Added "display: block" and "max-width: 100%" for <img>.
-
-04/08/2023
-1. Added class "container".
+## Technologies
+[![Technologies](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
+[![Tools](https://skillicons.dev/icons?i=github,vscode,figma)](https://skillicons.dev)
