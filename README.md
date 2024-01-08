@@ -14,3 +14,15 @@ $ sudo npm install stylus -g
 ```
 $ stylus {path}/main.styl --out /{path} --compress
 ```
+
+```
+$ stylus -w {path}/main.styl -o {path}/main.css
+```
+
+```
+$ stylus -w {path}/main.styl -o {path}/main.min.css -c
+```
+
+```
+$ stylus -m {path}/main.styl -o {path}/main.css
+```
