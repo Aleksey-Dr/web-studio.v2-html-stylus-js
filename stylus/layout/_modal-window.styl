@@ -82,14 +82,14 @@
     font-size: 18px;
 
     transition: border-color 250ms $timing-function;
-}
 
-.modal-form-input:focus {
-    outline-color: transparent;
-    outline-offset: 4px;
-    border-color: $primary-brand-color;
+    &:focus {
+        outline-color: transparent;
+        outline-offset: 4px;
+        border-color: $primary-brand-color;
 
-    fill: $primary-brand-color;
+        fill: $primary-brand-color;
+    }
 }
 
 .modal-form-icon {
@@ -129,20 +129,19 @@
     color: rgba(46, 47, 66, 0.4);
 
     transition: border-color 250ms $timing-function;
-}
 
-.modal-form-texarea:focus {
-    outline-color: transparent;
-    outline-offset: 4px;
-    border-color: $primary-brand-color;
-}
+    &:focus {
+        outline-color: transparent;
+        outline-offset: 4px;
+        border-color: $primary-brand-color;
+    }
 
-.modal-form-texarea::placeholder {
-    font-size: $form-label-font-size;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: $icon-gray-color;
-
+    &::placeholder {
+        font-size: $form-label-font-size;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: $icon-gray-color;
+    }
 }
 
 .modal-form-element-checkbox {
