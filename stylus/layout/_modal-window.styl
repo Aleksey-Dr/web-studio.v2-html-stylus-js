@@ -6,8 +6,8 @@
 
   width: 100%;
   height: 100%;
-  transition: opacity 250ms var(--timing-function),
-    visibility 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function,
+    visibility 250ms $timing-function;
 
   background-color: rgba(46, 47, 66, 0.40);
 }
@@ -34,9 +34,9 @@
     0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
-  background-color: var(--modal-background-color);
+  background-color: $modal-background-color;
 
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms $timing-function;
 }
 
 /* Modal form */
@@ -44,10 +44,10 @@
     margin-bottom: 16px;
 
     text-align: center;
-    font-weight: var(--medium-font-weight);
+    font-weight: $medium-font-weight;
     line-height: 1.5;
-    letter-spacing: var(--primary-letter-spacing);
-    color: var(--primary-blue-color);
+    letter-spacing: $primary-letter-spacing;
+    color: $primary-blue-color;
 }
 
 .modal-form-element {
@@ -58,10 +58,10 @@
     display: block;
     margin-bottom: 4px;
 
-    font-size: var(--form-label-font-size);
+    font-size: $form-label-font-size;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--icon-gray-color);
+    color: $icon-gray-color;
 }
 
 .modal-input-wrapper {
@@ -81,15 +81,15 @@
 
     font-size: 18px;
 
-    transition: border-color 250ms var(--timing-function);
+    transition: border-color 250ms $timing-function;
 }
 
 .modal-form-input:focus {
     outline-color: transparent;
     outline-offset: 4px;
-    border-color: var(--primary-brand-color);
+    border-color: $primary-brand-color;
 
-    fill: var(--primary-brand-color);
+    fill: $primary-brand-color;
 }
 
 .modal-form-icon {
@@ -98,13 +98,13 @@
     left: 16px;
     transform: translateY(-50%);
 
-    fill: var(--primary-blue-color);
+    fill: $primary-blue-color;
 
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $timing-function;
 }
 
 .modal-form-input:focus + .modal-form-icon {
-    fill: var(--primary-brand-color);
+    fill: $primary-brand-color;
 }
 
 .modal-form-element-texarea {
@@ -123,25 +123,25 @@
     background-color: transparent;
     outline: transparent;
 
-    font-size: var(--form-label-font-size);
+    font-size: $form-label-font-size;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
 
-    transition: border-color 250ms var(--timing-function);
+    transition: border-color 250ms $timing-function;
 }
 
 .modal-form-texarea:focus {
     outline-color: transparent;
     outline-offset: 4px;
-    border-color: var(--primary-brand-color);
+    border-color: $primary-brand-color;
 }
 
 .modal-form-texarea::placeholder {
-    font-size: var(--form-label-font-size);
+    font-size: $form-label-font-size;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: var(--icon-gray-color);
+    color: $icon-gray-color;
 
 }
 
@@ -150,25 +150,25 @@
 }
 
 .modal-form-input-checkbox:checked + .modal-form-checkbox-label .modal-form-span-checkbox {
-    background-color: var(--pressed-state-color);
+    background-color: $pressed-state-color;
     border: none;
 
-    fill: var(--text-light-color);
+    fill: $text-light-color;
 }
 
 .modal-form-checkbox-label {
     display: block;
     align-items: center;
 
-    font-size: var(--form-label-font-size);
+    font-size: $form-label-font-size;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--icon-gray-color);
+    color: $icon-gray-color;
 }
 
 .modal-form-checkbox-label a {
     text-decoration: underline;
-    color: var(--primary-brand-color);
+    color: $primary-brand-color;
 }
 
 .modal-form-span-checkbox {
@@ -186,9 +186,9 @@
 
     fill: transparent;
 
-    transition: background-color 250ms var(--timing-function),
-        border 250ms var(--timing-function),
-        fill 250ms var(--timing-function);
+    transition: background-color 250ms $timing-function,
+        border 250ms $timing-function,
+        fill 250ms $timing-function;
 }
 
 /* Mobile-min */
